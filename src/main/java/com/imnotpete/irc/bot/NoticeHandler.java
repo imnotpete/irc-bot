@@ -1,8 +1,8 @@
 package com.imnotpete.irc.bot;
 public class NoticeHandler {
-	private ExtendedIRCBot bot = null;
+	private ExtendedIrcBot bot = null;
 
-	public NoticeHandler(ExtendedIRCBot bot) {
+	public NoticeHandler(ExtendedIrcBot bot) {
 		this.bot = bot;
 	}
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.*;
 import java.math.BigDecimal;
 
-public class ExtendedIRCBot extends BasicIRCBot {
+public class ExtendedIrcBot extends BasicIrcBot {
 	private static ArrayList<String> trusted;
 	public static Properties properties = new Properties();
 	private static final String[] MAGIC8BALL_PHRASES = {
@@ -22,7 +22,7 @@ public class ExtendedIRCBot extends BasicIRCBot {
 	private InviteHandler invite = new InviteHandler(this);
 	private NoticeHandler notice = new NoticeHandler(this);
 
-	public ExtendedIRCBot(String botName, String botDescription) {
+	public ExtendedIrcBot(String botName, String botDescription) {
 		super(botName, botDescription);
 	}
 
@@ -40,7 +40,7 @@ public class ExtendedIRCBot extends BasicIRCBot {
 		List<String> list = Arrays.asList(properties.getProperty("trusted").split(":"));
 		trusted = new ArrayList<String>(list);
 
-		ExtendedIRCBot IRC = new ExtendedIRCBot(properties.getProperty("botName"), properties.getProperty("botName"));
+		ExtendedIrcBot IRC = new ExtendedIrcBot(properties.getProperty("botName"), properties.getProperty("botName"));
 		IRC.connect(properties.getProperty("server"), 6667);
 		IRC.logon();
 

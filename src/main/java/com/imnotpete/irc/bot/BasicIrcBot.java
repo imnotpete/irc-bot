@@ -3,7 +3,7 @@ package com.imnotpete.irc.bot;
 import java.net.*;
 import java.io.*;
  
-public class BasicIRCBot {
+public class BasicIrcBot {
 	private BufferedReader IRCir;
 	private BufferedWriter IRCor;
 
@@ -61,7 +61,7 @@ public class BasicIRCBot {
         return true;
     }
 
-    public BasicIRCBot(String botName, String botDescription) {
+    public BasicIrcBot(String botName, String botDescription) {
         this.botName = botName;
         this.botDescription = botDescription;
     }

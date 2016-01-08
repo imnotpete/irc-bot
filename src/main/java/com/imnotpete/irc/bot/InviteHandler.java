@@ -1,9 +1,9 @@
 package com.imnotpete.irc.bot;
 public class InviteHandler {
 
-	private static ExtendedIRCBot bot = null;
+	private static ExtendedIrcBot bot = null;
 
-	public InviteHandler(ExtendedIRCBot bot) {
+	public InviteHandler(ExtendedIrcBot bot) {
 		this.bot = bot;
 	}
 
